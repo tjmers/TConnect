@@ -2,7 +2,7 @@
 
 #include <cstring>
 
-namespace word_processing {
+namespace cmd_processor {
 
 /// @brief Initalizes flags to default value.
 /// @param flags Flags to initalize.

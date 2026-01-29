@@ -1,6 +1,7 @@
 #pragma once
 
-namespace word_processing {
+/// @brief Processor for the command that starts the program.
+namespace cmd_processor {
 
 enum Mode {
     kNew,
