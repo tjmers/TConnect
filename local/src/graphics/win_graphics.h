@@ -5,8 +5,6 @@
 
 #include <iostream>
 #include <string>
-constexpr int STARTING_SCREEN_WIDTH = 1080;
-constexpr int STARTING_SCREEN_HEIGHT = 720;
 #include <dwrite.h>
 
 class Graphics
@@ -16,7 +14,9 @@ class Graphics
     ID2D1SolidColorBrush* brush;
     IDWriteFactory* w_factory;
     IDWriteTextFormat* text_format;
-public:
+    public:
+    static constexpr int STARTING_SCREEN_WIDTH = 1080;
+    static constexpr int STARTING_SCREEN_HEIGHT = 720;
     Graphics();
     ~Graphics();
 
