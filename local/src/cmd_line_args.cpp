@@ -97,6 +97,7 @@ ErrorCode ProcessCommandLine(const char* line, Flags& flags) {
     for (i = 1; line[i]; ++i) {
         if (line[i] == ' ') {
             if (last_space == -1) {
+                last_space = i;
                 continue;
             }
 
@@ -111,6 +112,8 @@ ErrorCode ProcessCommandLine(const char* line, Flags& flags) {
             last_space = i;
         }
     }
+
+    if (last_space == -1) return ErrorCode::kNoMode;
 
     // Process last one
     if (last_space != i - 1) {
