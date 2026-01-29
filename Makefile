@@ -1,8 +1,8 @@
 .PHONY: all local remote local_test remote_test
 
 CXX := g++
-CXX_LOCAL_FLAGS := -O3 -Werror -Wall
-CXX_REMOTE_FLAGS := -O3 -Werror -Wall
+CXX_LOCAL_FLAGS := -O3 -Wextra -Wall
+CXX_REMOTE_FLAGS := -O3 -Wextra -Wall
 LD_LOCAL_FLAGS :=
 LD_REMOTE_FLAGS :=
 GRAPHICS_CPP_SRC := 
